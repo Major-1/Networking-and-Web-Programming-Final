@@ -71,7 +71,7 @@ body {
 .side {
   -ms-flex: 40%; /* IE10 */
   flex: 20%;
-  background-color: #f1f1f1;
+  background-color: #f1f78;
   padding: 20px;
 }
 
@@ -91,28 +91,32 @@ body {
   background: #733;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
     width: 100%;
 	}
+
+	table, th, td {
+  border: 1px solid black;
+}
 }
 </style>
 </head>
 <body>
-
+<!-- Header for website -->
 <div class="header">
   <h1>Derek's Website</h1>
   <p>A website for Networking and Web Programming Final Project</p>
 </div>
+
+<!-- Left hand side layout for html -->
 
 <div class="row">
   <div class="side">
@@ -134,6 +138,9 @@ body {
 		<h3> Resume listed down below <h3>
 			<a href="resume.pdf">View My Resume</a>
   </div>
+
+<!-- Main page layout for html -->
+
   <div class="main">
 		<h2>Howard University Courses Taken:</h2>
 		<h5> CUMULATIVE GPA: 3.23 </h5>
@@ -146,8 +153,36 @@ body {
     <h5>Undergraduate Member, Training & Testing Preparation, April 2020 - August 2020</h5>
 		<p>Provide research training and graduate school preparation, including GRE workshops and professional development graduate admission programs.</p>
 		<br><br>
+		<h2> Goals and Aspirations after University </h2>
+		
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<table style="width:100%">
+  <tr>
+    <th>Short Term Goals</th>
+    <th>Long Term Goals</th> 
+  </tr>
+  <tr>
+    <td>Work within my field</td>
+    <td>Recieve an MBA</td>
+  </tr>
+  <tr>
+    <td>Obtain Certifications</td>
+    <td>Work within my field for 5 years minimum</td>
+  </tr>
+  <tr>
+    <td>Refine Crypto Development</td>
+    <td>Learn more ways to recieve passive income</td>
+  </tr>
+</table>
+
   </div>
 </div>
+
+<!-- Footer for the page -->
 
 <div class="footer">
   <h2></h2>
